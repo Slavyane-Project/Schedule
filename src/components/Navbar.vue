@@ -22,7 +22,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn class="ml-5 hidden-md-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
+      <v-btn class="ml-5 hidden-sm-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
         {{ course.title }}
       </v-btn>
 
