@@ -1,32 +1,29 @@
 <template>
   <div>
-    <h1 class="font-weight-regular">Выберите ваше направление подготовки</h1>
+    <h1 class="display-2 font-weight-regular">Выберите ваше направление подготовки:</h1>
     <v-container class="my-5">
       
       <v-row>
         <v-col cols="12" sm="6" md="4" lg="3" v-for="faculty of faculties" :key="faculty.name">
-          <v-card flat class="text-center ma-3">
+          <v-card flat shaped elevation="3" class="text-center ma-3">
             <v-responsive class="pt-4">
               <v-avatar size="100" class="grey lighten-2">
-                <img :src="faculty.avatar">
+                <v-icon x-large>{{ faculty.icon }}</v-icon>
               </v-avatar>
             </v-responsive>
             <v-card-text>
-              <div class="subtitle1">{{ faculty.name }}</div>
-              <div class="grey--text">{{ faculty.role }}</div>
+              <div class="title black--text">{{ faculty.name }}</div>
             </v-card-text>
-              <v-menu offset-y>
+              <v-menu transition="slide-y-transition" offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn v-on="on">
+                  <v-btn v-on="on" class="mb-5">
                     <span>Выберите группу</span>
                   </v-btn>
                 </template>
                 <v-list>
-                  <v-list-item>
-                    <v-list-item-title @click="''" >
-                        <div v-for="gr of faculty.groups" :key="gr.group">
-                          {{ gr.group }}
-                        </div>
+                  <v-list-item @click="''" v-for="gr of faculty.groups" :key="gr.group" router :to="gr.url">
+                    <v-list-item-title>
+                      {{ gr.group }}
                     </v-list-item-title>
                   </v-list-item>
                 </v-list>
@@ -45,23 +42,23 @@ export default {
   data () {
     return {
       faculties: [
-        { name: 'Бизнес-информатика', avatar: '/avatar-1.png',
+        { name: 'Бизнес-информатика', icon:'mdi-laptop',
           groups: [
-            { group: 'БИ-181'}
+            { group: 'БИ-181', url: '/course_1/bi_181'}
         ]
         },
-        { name: 'Торговое дело', avatar: '/avatar-2.png',
+        { name: 'Торговое дело', icon: 'mdi-cash-register',
           groups: [
-            { group: 'ТД-181'},
-            { group: 'ТД-182'}
+            { group: 'ТД-181', url: '/course_1/td_181'},
+            { group: 'ТД-182', url: '/course_1/td_182'}
           ],
 
         }, 
-        { name: 'Экономика', avatar: '/avatar-3.png',},
-        { name: 'Менеджмент', avatar: '/avatar-4.png', },
-        { name: 'Гос. муниципальное управление', avatar: '/avatar-5.png', },
-        { name: 'Управление персоналом', avatar: '/avatar-5.png', },
-        { name: 'Финансы и кредит', avatar: '/avatar-5.png', }
+        { name: 'Экономика', icon: 'mdi-finance',},
+        { name: 'Менеджмент', icon: 'mdi-account-group', },
+        { name: 'Гос. муниципальное управление', icon: 'mdi-account-tie', },
+        { name: 'Управление персоналом', icon: 'mdi-account-group', },
+        { name: 'Финансы и кредит', icon: 'mdi-credit-card-outline', }
       ],
     }
   }
