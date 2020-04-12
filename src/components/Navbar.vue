@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar fixed elevate-on-scroll dense>
+    <v-app-bar dense elevate-on-scroll color="white" elevation='1'>
 
       <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
       <router-link
@@ -10,7 +10,7 @@
         >
       <img src="@/assets/title-image.png" height="40" class="mr-6 mt-2">
       </router-link>
-      <v-toolbar-title dark class="ml-n6">
+      <v-toolbar-title dark class="ml-n6 hidden-sm-and-down font-weight-light">
          <router-link
           to = "/"
           tag = "span"
@@ -22,7 +22,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn class="ml-5 hidden-sm-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
+      <v-btn class="ml-3 hidden-sm-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
         {{ course.title }}
       </v-btn>
 
