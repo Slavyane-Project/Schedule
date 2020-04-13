@@ -74,7 +74,4 @@ h1 {
 item {
   text-align: center;
 }
-.list {
-  border-radius: 10px;
-}
 </style>
