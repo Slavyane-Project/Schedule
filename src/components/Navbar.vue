@@ -21,7 +21,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn class="ml-3 hidden-sm-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
+      <v-btn class="ml-5 hidden-sm-and-down" elevation='2' rounded outlined v-for="course of courses" :key="course.title" :to="course.url" >
         {{ course.title }}
       </v-btn>
 
@@ -64,9 +64,6 @@ export default {
         },
         {
           title: '1 курс Магистратуры', url: '/course_5'
-        },
-        {
-          title: '2 курс Магистратуры', url: '/course_6'
         },
       ]
     }
