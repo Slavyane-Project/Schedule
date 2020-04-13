@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <v-app-bar dense elevate-on-scroll color="white" elevation='1'>
-
+    <v-app-bar dense elevate-on-scroll color="white" elevation='3'>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
       <router-link
           to = "/"
