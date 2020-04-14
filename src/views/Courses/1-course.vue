@@ -1,5 +1,5 @@
-<template> 
-    <Courses  
+<template>
+    <Courses
       :faculties="faculties"
     />
 </template>
@@ -21,7 +21,7 @@ export default {
             groups: [
               { group: 'ТД-б-о-191', url: '/course_1/td_191'},
             ],
-          }, 
+          },
 
           { name: 'Экономика', icon: 'mdi-finance',
             groups: [
@@ -29,10 +29,10 @@ export default {
               { group: 'Э-б-о-192', url: '/course_1/e_192'},
               { group: 'Э-б-о-193', url: '/course_1/e_193'},
               { group: 'Э-б-о-194', url: '/course_1/e_194'},
-            ]  
+            ]
           },
 
-          { name: 'Гос. муниципальное управление', icon: 'mdi-account-tie', 
+          { name: 'Гос. муниципальное управление', icon: 'mdi-account-tie',
             groups: [
               { group: 'ГМУ-б-о-191', url: '/course_1/gu_191'},
               { group: 'ГМУ-б-о-192', url: '/course_1/gu_192'},
