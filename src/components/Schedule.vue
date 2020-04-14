@@ -2,7 +2,7 @@
   <div>
     <v-container class="mt-5">
       <v-row class="justify-center">
-        <v-col cols="11" md="12" lg="9" class="justify-center mb-6" v-for="day of days" :key="day.name" flat >
+        <v-col cols="11" md="12" lg="6" class="justify-center mb-6" v-for="day of days" :key="day.name" flat >
           <v-card>
             <v-card-title class="justify-center">{{ day.name }}</v-card-title>
             <v-card v-for="lesson of day.lessons" :key="lesson.number" class="my-3" elevation="4">
