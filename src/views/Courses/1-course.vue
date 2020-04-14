@@ -48,15 +48,4 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
-=======
-h1 {
-  text-align: center;
-  font-family: Calibri;
-  margin-top: 2%
-}
-.item {
-  text-align: center;
-}
->>>>>>> 3b2d5d118ea54ea44b647a7c753a76377d01f3d5
 </style>
