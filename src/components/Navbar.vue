@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <v-app-bar fixed elevate-on-scroll dense>
-
+    <v-app-bar dense elevate-on-scroll color="white" elevation='3'>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
       <router-link
           to = "/"
@@ -10,7 +9,7 @@
         >
       <img src="@/assets/title-image.png" height="40" class="mr-6 mt-2">
       </router-link>
-      <v-toolbar-title dark class="ml-n6">
+      <v-toolbar-title dark class="ml-n6 hidden-sm-and-down font-weight-regular">
          <router-link
           to = "/"
           tag = "span"
@@ -29,7 +28,7 @@
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer" temporary>
       <v-list>
-        <v-list-item-group color="indigo lighten-2">
+        <v-list-item-group color="teal lighten-5">
           <template>
             <v-list-item v-for="course of courses" :key="course.title" router :to="course.url" class="">
               <v-list-item-content>
@@ -65,9 +64,6 @@ export default {
         },
         {
           title: '1 курс Магистратуры', url: '/course_5'
-        },
-        {
-          title: '2 курс Магистратуры', url: '/course_6'
         },
       ]
     }
