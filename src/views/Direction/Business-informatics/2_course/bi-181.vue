@@ -17,10 +17,10 @@ export default {
             {
               number: "1",
               time: "08:00-09:30",
-              nameCh: ' ',
-              teacherCh: ' ',
-              auditoryCh: '',
-              link: ' ',
+              nameCh: 'ddddddddd',
+              teacherCh: 'ddddddddd',
+              auditoryCh: 'ddddddddd',
+              link: '-',
               nameZ: 'Проектирование пользовательского интерфейса',
               teacherZ: 'Королёв О.Л.',
               auditoryZ: '306',
@@ -53,21 +53,21 @@ export default {
               nameCh: 'Культурология',
               teacherCh: 'Кравченко И.В',
               auditoryCh: '03',
-              link: ' ',
-              nameZ: ' ',
-              teacherZ: ' ',
-              auditoryZ: ' '
+              link: 'ddddddddd',
+              nameZ: 'ddddddddd',
+              teacherZ: 'ddddddddd',
+              auditoryZ: 'ddddddddd'
             },
             {
               number: '5',
               time: "15:00-16:30",
-              nameCh: ' ',
-              teacherCh: ' ',
-              auditoryCh: ' ',
-              link: ' ',
-              nameZ: ' ',
-              teacherZ: ' ',
-              auditoryZ: ' '
+              nameCh: 'ddddddddd',
+              teacherCh: 'ddddddddd',
+              auditoryCh: 'ddddddddd',
+              link: 'ddddddddd',
+              nameZ: 'ddddddddd',
+              teacherZ: 'ddddddddd',
+              auditoryZ: 'ddddddddd'
             },
           ]
         },
