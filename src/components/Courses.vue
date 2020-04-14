@@ -2,22 +2,22 @@
   <div>
     <h1 class="display-2 font-weight-regular">Выберите ваше направление подготовки</h1>
     <v-container class=" my-5">
-      <v-row>
-        <v-col cols="12" sm="6" md="4" lg="3" v-for="faculty of faculties" :key="faculty.name">
-          <v-card shaped flat elevation="3" class="text-center ma-3 cardStyle">
+      <v-row class="justify-center">
+        <v-col cols="12" sm="6" md="4" lg="4" v-for="faculty of faculties" :key="faculty.name">
+          <v-card shaped flat elevation="3" class="text-center ma-3">
             <v-responsive class="pt-4">
               <v-avatar size="100" class="grey lighten-2">
                 <v-icon x-large>{{ faculty.icon }}</v-icon>
               </v-avatar>
             </v-responsive>
-            <v-card-text>
+            <v-card-text class="pb-6">
               <div class="title black--text">{{ faculty.name }}</div>
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-menu transition="scale-transition">
+              <v-menu transition="slide-y-transition">
                 <template v-slot:activator="{ on }">
                   <div class="text-center">
-                    <v-btn v-on="on" rounded class="mb-3">
+                    <v-btn v-on="on" rounded class="mb-4">
                       <span>Выберите группу</span>
                     </v-btn>
                   </div>
@@ -64,8 +64,5 @@ h1 {
 .item {
   text-align: center;
 }
-/* .margin{
-  margin-left
-} */
 
 </style>
