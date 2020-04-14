@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="display-2 font-weight-regular">Выберите ваше направление подготовки</h1>
-    <v-container class=" my-5">
+    <h1 class="display-1 font-weight-regular mt-10">Выберите ваше направление подготовки</h1>
+    <v-container class="mt-5">
       <v-row class="justify-center">
-        <v-col cols="12" sm="6" md="4" lg="4" v-for="faculty of faculties" :key="faculty.name">
+        <v-col class="justify-center" cols="12" sm="6" md="4" lg="4" v-for="faculty of faculties" :key="faculty.name">
           <v-card shaped flat elevation="3" class="text-center ma-3">
             <v-responsive class="pt-4">
-              <v-avatar size="100" class="grey lighten-2">
+              <v-avatar size="100" class="blue-grey lighten-5">
                 <v-icon x-large>{{ faculty.icon }}</v-icon>
               </v-avatar>
             </v-responsive>
@@ -58,11 +58,8 @@ export default {
 <style>
 h1 {
   text-align: center;
-  font-family: Calibri;
-  margin-top: 2%
 }
 .item {
   text-align: center;
 }
-
 </style>

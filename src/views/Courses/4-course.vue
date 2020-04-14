@@ -39,7 +39,7 @@ export default {
             ]  
           },
 
-          { name: 'Гос. муниципальное управление', icon: 'mdi-account-tie', 
+          { name: 'Гос. мун. управление', icon: 'mdi-account-tie', 
             groups: [
               { group: 'ГМУ-б-о-161', url: '/course_4/gu_161'},
               { group: 'ГМУ-б-о-162', url: '/course_4/gu_162'},

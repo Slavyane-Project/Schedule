@@ -35,7 +35,7 @@ export default {
               { group: 'ФиК-м-о-192', url: '/course_5/fik_192'},
             ]  
           },
-          { name: 'Гос. муниципальное управление', icon: 'mdi-account-tie', 
+          { name: 'Гос. мун. управление', icon: 'mdi-account-tie', 
             groups: [
               { group: 'ГМУ-м-о-191', url: '/course_5/gu_191'},
             ]

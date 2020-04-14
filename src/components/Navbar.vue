@@ -9,7 +9,7 @@
         >
       <img src="@/assets/title-image.png" height="40" class="mr-6 mt-2">
       </router-link>
-      <v-toolbar-title dark class="ml-n6 hidden-sm-and-down font-weight-light">
+      <v-toolbar-title dark class="ml-n6 hidden-sm-and-down font-weight-regular">
          <router-link
           to = "/"
           tag = "span"
@@ -28,7 +28,7 @@
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer" temporary>
       <v-list>
-        <v-list-item-group color="indigo lighten-2">
+        <v-list-item-group color="teal lighten-5">
           <template>
             <v-list-item v-for="course of courses" :key="course.title" router :to="course.url" class="">
               <v-list-item-content>
