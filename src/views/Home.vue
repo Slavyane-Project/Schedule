@@ -6,10 +6,10 @@
           <v-row class="justify-center">
           <v-img max-width="650" src="https://imgur.com/y14cs7l.png"></v-img>
           </v-row>
-          <v-card-text class="display-3 text-xs-center homeTextBig black--text">Приветствуем.</v-card-text>
-          <v-card-text class="display-3 text-xs-center homeTextBig black--text">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
+          <v-card-text class="display-2 text-xs-center homeTextBig black--text">Приветствуем.</v-card-text>
+          <v-card-text class="display-2 text-xs-center homeTextBig black--text">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
           <br>
-          <v-card-text class="display-2 font-weight-bold text-xs-center homeTextBig black--text" >Выберите ваш курс в меню</v-card-text>
+          <v-card-text class="display-1 font-weight-bold text-xs-center homeTextBig black--text" >Выберите ваш курс в меню</v-card-text>
         </v-card>
         <v-card flat class="cardStyle hidden-md-and-up">
           <v-card-text class="headline homeTextSmall text-xs-center  black--text">Приветствуем.</v-card-text>

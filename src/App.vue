@@ -1,11 +1,9 @@
 <template>
-  <v-app>
-
-    <v-content class="deep-orange lighten-5">
+  <v-app class="">
+    <v-content class="home-hero">
       <Navbar />
       <router-view></router-view>
     </v-content>
-
   </v-app>
 </template>
 
@@ -24,3 +22,18 @@ export default {
   }),
 };
 </script>
+<style>
+.home-hero {
+  background: url(https://imgur.com/gawxpGr.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+<style lang="scss">
+  @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
+
+#app {
+  font-family: 'Rubik'
+}
+</style>
+

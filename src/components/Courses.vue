@@ -1,17 +1,17 @@
 <template>
   <div>
-    <h1 class="display-1 font-weight-regular mt-10">Выберите ваше направление подготовки</h1>
-    <v-container class="mt-5">
+    <h1 class="mt-10">Выберите направление подготовки</h1>
+    <v-container class="mt-5 home-hero">
       <v-row class="justify-center">
         <v-col class="justify-center" cols="12" sm="6" md="4" lg="4" v-for="faculty of faculties" :key="faculty.name">
-          <v-card shaped flat elevation="3" class="text-center ma-3">
+          <v-card shaped elevation="3" class="text-center ma-3 myFont">
             <v-responsive class="pt-4">
               <v-avatar size="100" class="grey lighten-5">
                 <v-icon x-large color="black">{{ faculty.icon }}</v-icon>
               </v-avatar>
             </v-responsive>
             <v-card-text class="pb-6">
-              <div class="title black--text">{{ faculty.name }}</div>
+              <div class="myFont title">{{ faculty.name }}</div>
             </v-card-text>
             <v-card-actions class="justify-center">
               <v-menu transition="slide-y-transition">
@@ -61,5 +61,18 @@ h1 {
 }
 .item {
   text-align: center;
+}
+</style>
+
+<style lang="scss">
+  @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
+
+.myFont {
+  font-family: "Rubik";
+  font-weight: medium;
+  color: black
+}
+.titleFontStyle {
+  font-weight: medium;
 }
 </style>
