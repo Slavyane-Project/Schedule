@@ -106,7 +106,7 @@ export default {
           name: "Среда",
           lessons: [
             {
-              number: "2",
+              number: "1",
               time: "09:50-11:20",
               name: "ЖЦИС",
               teacher: "Королёв О.Л.",
