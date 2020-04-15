@@ -4,7 +4,7 @@
       <v-col cols="12" sm="6" md="6" lg="7" xl="7">
         <v-card flat class="cardStyle hidden-sm-and-down">
           <v-row class="justify-center">
-          <v-img max-width="650" src="https://imgur.com/y14cs7l.png"></v-img>
+          <v-img max-width="650" src="../assets/big_logo.png"></v-img>
           </v-row>
           <v-card-text class="display-2 text-xs-center homeTextBig black--text">Приветствуем.</v-card-text>
           <v-card-text class="display-2 text-xs-center homeTextBig black--text">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
   .home-hero {
-    background: url("https://imgur.com/UxdtqzJ.png");
+    background: url(../assets/background.png);
     background-size: cover;
     width: 100%;
     height: 100%;

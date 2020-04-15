@@ -24,7 +24,7 @@ export default {
 </script>
 <style>
 .home-hero {
-  background: url(https://imgur.com/gawxpGr.png);
+  background: url(assets/background-white.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
