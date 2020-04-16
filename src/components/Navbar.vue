@@ -7,7 +7,11 @@
           class = "pointer"
           @click="''"
         >
+<<<<<<< Updated upstream
       <img src="@/assets/title-image.png" height="40" class="mr-6 mt-2">
+=======
+      <img src="../assets/logo2.png" height="40" class="mr-6 mt-2">
+>>>>>>> Stashed changes
       </router-link>
       <v-toolbar-title dark class="ml-n6 hidden-sm-and-down font-weight-regular">
          <router-link
