@@ -1,6 +1,7 @@
 <template>
   <Schedule
     :days="days"
+    :groupName="groupName"
   />
 </template>
 
@@ -11,6 +12,7 @@ import Schedule from '@/components/Schedule.vue'
 export default {
   data () {
     return {
+      groupName: 'Э-б-о-183',
       days: [
         {
           name: "Понедельник",

@@ -17,59 +17,48 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "08:00-09:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
+              time: "9:50-11:20",
+              nameCh: 'Гос. и муницип. финансы (Л)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '011',
               link: '-',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-',
             },
             {
               number: '2',
-              time: '09:50-11:20',
-              nameCh: 'Безопасность жизнедеятельности',
-              teacherCh: 'Махаричева А.А.',
-              auditoryCh: '03',
-              link: ' ',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306'
+              time: '11:30-13:00',
+              nameCh: 'Гос. и муницип. финансы (Л)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '011',
+              link: '',
+              nameZ: 'Управление кластерами региона (Л)',
+              teacherZ: 'Подсолонко В.А.',
+              auditoryZ: '011'
             },
             {
               number: '3',
-              time: '11:30-13:00',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В.',
-              auditoryCh: '03',
+              time: '13:20-14:50',
+              nameCh: 'Гос. и муницип. финансы (Пр)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '-',
               link: ' ',
-              nameZ: 'Безопасность жизнедеятельности',
-              teacherZ: 'Скоромная Н.И.',
-              auditoryZ: '207'
+              nameZ: 'Управление кластерами региона (Пр)',
+              teacherZ: 'Подсолонко В.А.',
+              auditoryZ: '09'
             },
             {
               number: '4',
-              time: '13:20-14:50',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В',
-              auditoryCh: '03',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
-            },
-            {
-              number: '5',
-              time: "15:00-16:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
-            },
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '',
+              nameZ: 'Эффект. руководит. в системе гос. управления (Л)',
+              teacherZ: '-',
+              auditoryZ: '506'
+            }
           ]
         },
 
@@ -78,28 +67,39 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Бойченко",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: 'Кадр. обеспечение гос. и муницип. управления (Пр)',
+              teacherCh: 'Глушко Ю.В.',
+              auditoryCh: '405',
+              link: '',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Кадр. обеспечение гос. и муницип. управления (Л)',
+              teacherCh: 'Глушко Ю.В.',
+              auditoryCh: '405',
+              link: ''
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Эффект. руководит. в системе гос. управления (Пр)',
+              teacherCh: 'Смерницкая Е.В.',
+              auditoryCh: '09',
+              link: '',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-',
+            },
+            {
+              number: "5",
+              time: "16:40-18:10",
+              nameCh: "Физическая культура и спорт (Пр)",
+              teacherCh: "-",
+              auditoryCh: 'Спортзал',
               link: ""
-            }
+            },
           ]
         },
 
@@ -108,27 +108,38 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: 'Инновацион. технологии в гос. управлении (Пр)',
+              teacherCh: 'Онищенко С.К.',
+              auditoryCh: '206',
+              link: '-',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Инновацион. технологии в гос. управлении (Л)',
+              teacherCh: 'Онищенко С.К.',
+              auditoryCh: '206',
+              link: '',
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Государственная инвестиционная политика (Пр)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '-',
+              link: '',
+              nameZ: 'Гос. и муницип. финансы (Пр)',
+              teacherZ: 'Климчук С.В.',
+              auditoryZ: '-',
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '',
             }
           ]
         },
@@ -138,28 +149,39 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: 'Государственная ивестиционная политика (Л)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '-',
+              link: '',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: ''
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Государственная ивестиционная политика (Пр)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '508',
+              link: ''
+            },
+            {
+              number: "4",
+              time: "15:00-16:30",
+              nameCh: 'Государственная ивестиционная политика (Л)',
+              teacherCh: 'Климчук С.В.',
+              auditoryCh: '512',
+              link: ''
+            },
           ]
         },
 
@@ -168,27 +190,41 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Регион. управление и территор. планирование (Л)',
+              teacherCh: 'ДобровольскаяО.П.',
+              auditoryCh: '03',
+              link: ' ',
+              nameZ: 'Гос. и муницип. финансы (Л)',
+              teacherZ: 'Климчук С.В.',
+              auditoryZ: '03'
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Регион. управление и территор. планирование (Пр)',
+              teacherCh: 'ДобровольскаяО.П.',
+              auditoryCh: '011',
+              link: ' ',
+              nameZ: 'Гос. и муницип. финансы (Пр)',
+              teacherZ: 'Климчук С.В.',
+              auditoryZ: '011'
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
             }
           ]
         }

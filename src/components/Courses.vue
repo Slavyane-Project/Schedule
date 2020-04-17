@@ -1,17 +1,19 @@
 <template>
   <div>
     <h1 class="mt-10">Выберите направление подготовки</h1>
-        <v-container class="mt-5 home-hero">
-          <v-row class="justify-center">
-            <v-col
-              class="justify-center"
-              cols="12"
-              sm="6"
-              md="4"
-              lg="4"
-              v-for="faculty of faculties"
-              :key="faculty.name"
-            >
+    <v-container class="mt-5 home-hero">
+      <v-row class="justify-center">
+        <v-col
+          class="justify-center"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="4"
+          v-for="faculty of faculties"
+          :key="faculty.name"
+        >
+          <transition appear @before-enter="beforeEnter" @enter="enter" :css="false">
+            <div>
               <v-card shaped elevation="3" class="text-center ma-3 myFont">
                 <v-responsive class="pt-4">
                   <v-avatar size="100" class="grey lighten-5">
@@ -44,13 +46,16 @@
                   </v-menu>
                 </v-card-actions>
               </v-card>
-            </v-col>
-          </v-row>
-        </v-container>
+            </div>
+          </transition>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
+import gsap from "gsap"
 export default {
   props: {
     faculties: {
@@ -58,8 +63,20 @@ export default {
       required: true
     }
   },
-  data() {
-    return {};
+  methods: {
+    beforeEnter(el) {
+      el.style.opacity = 0
+      el.style.transform = 'scale(0,0)'
+    },
+    enter(el, done) {
+      gsap.to(el, {
+        duration: 0.7,
+        opacity: 1,
+        scale: 1,
+        ease: 'power3.inOut',
+        onComplete: done
+      })
+    }
   }
 };
 </script>

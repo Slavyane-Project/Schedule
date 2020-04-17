@@ -1,6 +1,7 @@
 <template>
   <Schedule
     :days="days"
+    :groupName="groupName"
   />
 </template>
 
@@ -11,13 +12,14 @@ import Schedule from '@/components/Schedule.vue'
 export default {
   data () {
     return {
+      groupName: 'БИ-б-о-171',
       days: [
         {
           name: "Понедельник",
           lessons: [
             {
               number: "1",
-              time: "08:00-09:30",
+              time: "9:50-11:20",
               nameCh: 'Управление ИТ-проектами (Пр)',
               teacherCh: 'Солдатова С.А.',
               auditoryCh: '307',
@@ -28,7 +30,7 @@ export default {
             },
             {
               number: '2',
-              time: '09:50-11:20',
+              time: '11:30-13:00',
               nameCh: 'Управление ИТ-проектами (Л)',
               teacherCh: 'Матвеев В.В.',
               auditoryCh: '307',
@@ -39,7 +41,7 @@ export default {
             },
             {
               number: '3',
-              time: '11:30-13:00',
+              time: '13:20-14:50',
               nameCh: 'Анализ ИТ-инфрастр. предпр. (Л)',
               teacherCh: 'Королёв О.Л.',
               auditoryCh: '307',
@@ -50,7 +52,7 @@ export default {
             },
             {
               number: '4',
-              time: '13:20-14:50',
+              time: '15:00-16:30',
               nameCh: '-',
               teacherCh: '-',
               auditoryCh: '-',
@@ -67,7 +69,7 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "08:00-09:30",
+              time: "9:50-11:20",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',
@@ -78,7 +80,7 @@ export default {
             },
             {
               number: "2",
-              time: "09:50-11:20",
+              time: "11:30-13:00",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',
@@ -89,7 +91,7 @@ export default {
             },
             {
               number: "3",
-              time: "11:30-13:00",
+              time: "13:20-14:50",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',
@@ -111,7 +113,7 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "08:00-09:30",
+              time: "9:50-11:20",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',
@@ -122,7 +124,7 @@ export default {
             },
             {
               number: "2",
-              time: "09:50-11:20",
+              time: "11:30-13:00",
               nameCh: "Прогнозирование соц.-экономич. процессов (Л)",
               teacherCh: "Солдатов М.А.",
               auditoryCh: '307',
@@ -133,14 +135,14 @@ export default {
             },
             {
               number: '3',
-              time: '11:30-13:00',
+              time: '13:20-14:50',
               nameCh: 'Прогнозирование соц.-экономич. процессов (Пр)',
               teacherCh: 'Солдатов М.А.',
               auditoryCh: '307',
             },
             {
             number: '4',
-              time: '13:20-14:50',
+              time: '15:00-16:30',
               nameCh: '-',
               teacherCh: '-',
               auditoryCh: '-',
@@ -157,7 +159,7 @@ export default {
           lessons: [
             {
              number: "1",
-              time: "08:00-09:30",
+              time: "9:50-11:20",
               nameCh: 'Моделирование бизнес-процессов (Пр)',
               teacherCh: 'Круликовский А.П.',
               auditoryCh: '-',
@@ -165,7 +167,7 @@ export default {
             },
             {
               number: '2',
-              time: '09:50-11:20',
+              time: '11:30-13:00',
               nameCh: 'Анализ ИТ-инфрастр. предпр. (Пр)',
               teacherCh: 'Усенко Р.С.',
               auditoryCh: '306',
@@ -173,7 +175,7 @@ export default {
             },
             {
               number: '3',
-              time: '11:30-13:00',
+              time: '13:20-14:50',
               nameCh: '-',
               teacherCh: '-',
               auditoryCh: '-',
@@ -184,7 +186,7 @@ export default {
             },
             {
               number: '4',
-              time: '13:20-14:50',
+              time: '15:00-16:30',
               nameCh: '-',
               teacherCh: '-',
               auditoryCh: '-',
@@ -201,7 +203,7 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "08:00-9:30",
+              time: "9:50-11:20",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',
@@ -209,7 +211,7 @@ export default {
             },
             {
               number: "2",
-              time: "9:50-11:20",
+              time: "11:30-13:00",
               nameCh: "Имитационное моделирование (Пр)",
               teacherCh: "Солдатов М.А.",
               auditoryCh: '204',
@@ -217,7 +219,7 @@ export default {
             },
             {
               number: "3",
-              time: "11:30-13:00",
+              time: "13:20-14:50",
               nameCh: "Имитационное моделирование (Л)",
               teacherCh: "Солдатов М.А.",
               auditoryCh: '204',
@@ -225,7 +227,7 @@ export default {
             },
             {
               number: "4",
-              time: "13:20-14:50",
+              time: "15:00-16:30",
               nameCh: "-",
               teacherCh: "-",
               auditoryCh: '-',

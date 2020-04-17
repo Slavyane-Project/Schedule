@@ -41,11 +41,11 @@ export default {
               number: '3',
               time: '13:20-14:50',
               nameCh: 'Иностранный язык (Пр)',
-              teacherCh: 'Сидоренко И.Я (Миколайчик М.В.)',
+              teacherCh: 'Сидоренко И.Я',
               auditoryCh: '408 (402)',
               link: ' ',
               nameZ: '',
-              teacherZ: '',
+              teacherZ: 'Миколайчик М.В.',
               auditoryZ: ''
             },
             {
