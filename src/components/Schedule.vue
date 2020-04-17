@@ -10,7 +10,7 @@
           :key="day.name"
           flat
         >
-          <v-card class="deep-orange lighten-2">
+          <v-card min-height="500" class="deep-orange lighten-2">
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
             <v-card
               v-for="lesson of day.lessons"
@@ -24,11 +24,18 @@
                     <div class="caption black--text">Время:</div>
                   </v-row>
                   <hr />
-                  <v-row class="justify-center">
-                    <v-col class="justify-center">
-                    <div class="pt-4 text-center">{{ lesson.time }}</div>
-                    </v-col>
-                  </v-row>
+                  <div v-if="lesson.nameZ!=''">
+                    <v-row class="justify-center">
+                      <v-col class="align-center">
+                        <div class="text-center">{{ lesson.time }}</div>
+                      </v-col>
+                    </v-row>
+                  </div>
+                  <div v-else>
+                    <v-row class="justify-center">
+                      <div class="text-center">{{ lesson.time }}</div>
+                    </v-row>
+                  </div>
                 </v-col>
                 <v-col cols="12" sm="5" md="5" lg="6">
                   <v-row class="justify-center">
@@ -38,6 +45,7 @@
                   <v-row class="justify-center">
                     <div class="text-center red--text">{{ lesson.nameCh }}</div>
                   </v-row>
+                  <hr v-if="lesson.nameZ!='' " />
                   <v-row class="justify-center">
                     <div class="text-center">{{ lesson.nameZ }}</div>
                   </v-row>
@@ -50,6 +58,7 @@
                   <v-row class="justify-center">
                     <div class="text-center red--text">{{ lesson.teacherCh }}</div>
                   </v-row>
+                  <hr v-if="lesson.nameZ!='' " />
                   <v-row class="justify-center">
                     <div class="text-center">{{ lesson.teacherZ }}</div>
                   </v-row>
@@ -59,9 +68,10 @@
                     <div class="caption black--text justify-center">Аудитория:</div>
                   </v-row>
                   <hr />
-                  <v-row class="justify-center red--text">
+                  <v-row class="red--text justify-center">
                     <div>{{ lesson.auditoryCh }}</div>
                   </v-row>
+                  <hr v-if="lesson.nameZ!='' " />
                   <v-row class="justify-center">
                     <div>{{ lesson.auditoryZ }}</div>
                   </v-row>
@@ -89,5 +99,8 @@ export default {
 <style>
 hr {
   border-radius: 5px;
+}
+.blockStyle {
+  vertical-align: middle;
 }
 </style>

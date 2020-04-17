@@ -201,26 +201,34 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
+              time: "08:00-9:30",
+              nameCh: "-",
+              teacherCh: "-",
+              auditoryCh: '-',
               link: ""
             },
             {
               number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
+              time: "9:50-11:20",
+              nameCh: "Имитационное моделирование (Пр)",
+              teacherCh: "Солдатов М.А.",
+              auditoryCh: '204',
               link: ""
             },
             {
               number: "3",
+              time: "11:30-13:00",
+              nameCh: "Имитационное моделирование (Л)",
+              teacherCh: "Солдатов М.А.",
+              auditoryCh: '204',
+              link: ""
+            },
+            {
+              number: "4",
               time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
+              nameCh: "-",
+              teacherCh: "-",
+              auditoryCh: '-',
               link: ""
             }
           ]

@@ -16,59 +16,48 @@ export default {
           name: "Понедельник",
           lessons: [
             {
-              number: "1",
-              time: "08:00-09:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
+              number: '1',
+              time: '9:50-11:20',
+              nameCh: 'Проектный менеджмент(ПР)',
+              teacherCh: 'Нехайчук Д.В.',
+              auditoryCh: '1/411',
               link: '-',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: '',
             },
             {
               number: '2',
-              time: '09:50-11:20',
-              nameCh: 'Безопасность жизнедеятельности',
-              teacherCh: 'Махаричева А.А.',
-              auditoryCh: '03',
-              link: ' ',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306'
+              time: '11:30-13:00',
+              nameCh: 'Комплексная оценка(ПР)',
+              teacherCh: 'Байрам У.Р.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
             },
             {
               number: '3',
-              time: '11:30-13:00',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В.',
-              auditoryCh: '03',
-              link: ' ',
-              nameZ: 'Безопасность жизнедеятельности',
-              teacherZ: 'Скоромная Н.И.',
-              auditoryZ: '207'
+              time: '13:20-14:50',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
             },
             {
               number: '4',
-              time: '13:20-14:50',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В',
-              auditoryCh: '03',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
-            },
-            {
-              number: '5',
-              time: "15:00-16:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
             },
           ]
         },
@@ -77,29 +66,49 @@ export default {
           name: "Вторник",
           lessons: [
             {
-              number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Бойченко",
-              auditory: '306',
-              link: ""
+              number: '1',
+              time: '9:50-11:20',
+              nameCh: 'Проектный менеджмент(ПР)',
+              teacherCh: 'Нехайчук Д.В.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: '',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Оценка рисков(ПР)',
+              teacherCh: 'Жарова А.Р.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: 'Оценка рисков(Л)',
+              teacherZ: 'Жарова А.Р.',
+              auditoryZ: '1/430'
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
+            },
           ]
         },
 
@@ -107,29 +116,49 @@ export default {
           name: "Среда",
           lessons: [
             {
-              number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              number: '1',
+              time: '9:50-11:20',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Самостоятельная работа',
+              teacherCh: '',
+              auditoryCh: '',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Самостоятельная работа',
+              teacherCh: '',
+              auditoryCh: '',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
+            },
           ]
         },
 
@@ -137,29 +166,49 @@ export default {
           name: "Четверг",
           lessons: [
             {
-              number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              number: '1',
+              time: '9:50-11:20',
+              nameCh: 'Бюджетный менеджмент(Л)',
+              teacherCh: 'Доброскок О.В.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: '',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Бюджетный менеджмент(Л)',
+              teacherCh: 'Доброскок О.В.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: 'Фин. менеджмент кредит. организ.(Л)',
+              teacherZ: 'Бондарь А.П.',
+              auditoryZ: '1/411'
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Фин. менеджмент кредит. организ.(ПР)',
+              teacherCh: 'Ягупова Е.А.',
+              auditoryCh: '1/411',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
+            },
           ]
         },
 
@@ -167,31 +216,51 @@ export default {
           name: "Пятница",
           lessons: [
             {
-              number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              number: '1',
+              time: '9:50-11:20',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: '',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '-',
+              teacherZ: '-',
+              auditoryZ: '-'
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Самостоятельная работа',
+              teacherCh: '-',
+              auditoryCh: '',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: 'Самостоятельная работа',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: '',
+              teacherZ: '',
+              auditoryZ: ''
+            },
           ]
-        }
+        },
       ]
     }
   },
