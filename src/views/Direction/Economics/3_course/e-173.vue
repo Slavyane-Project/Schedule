@@ -19,59 +19,36 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "08:00-09:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
-              link: '-',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306',
+              time: "9:50-11:20",
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-'
             },
             {
               number: '2',
-              time: '09:50-11:20',
-              nameCh: 'Безопасность жизнедеятельности',
-              teacherCh: 'Махаричева А.А.',
-              auditoryCh: '03',
-              link: ' ',
-              nameZ: 'Проектирование пользовательского интерфейса',
-              teacherZ: 'Королёв О.Л.',
-              auditoryZ: '306'
+              time: '11:30-13:00',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
             },
             {
               number: '3',
-              time: '11:30-13:00',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В.',
-              auditoryCh: '03',
-              link: ' ',
-              nameZ: 'Безопасность жизнедеятельности',
-              teacherZ: 'Скоромная Н.И.',
-              auditoryZ: '207'
+              time: '13:20-14:50',
+              nameCh: 'Теория управленческого учета (Л)',
+              teacherCh: 'Рощина Ю.В.',
+              auditoryCh: '406',
+              link: '-',
             },
             {
               number: '4',
-              time: '13:20-14:50',
-              nameCh: 'Культурология',
-              teacherCh: 'Кравченко И.В',
-              auditoryCh: '03',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
-            },
-            {
-              number: '5',
-              time: "15:00-16:30",
-              nameCh: 'ddddddddd',
-              teacherCh: 'ddddddddd',
-              auditoryCh: 'ddddddddd',
-              link: 'ddddddddd',
-              nameZ: 'ddddddddd',
-              teacherZ: 'ddddddddd',
-              auditoryZ: 'ddddddddd'
-            },
+              time: '15:00-16:30',
+              nameCh: 'Теория управленческого учета (Пр)',
+              teacherCh: 'Рощина Ю.В.',
+              auditoryCh: '406',
+              link: '',
+            }
           ]
         },
 
@@ -81,27 +58,41 @@ export default {
             {
               number: "1",
               time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Бойченко",
-              auditory: '306',
-              link: ""
+              nameCh: "Международные стандарты финанс. отчетности (Л)",
+              teacherCh: "Горбачёв В.А.",
+              auditoryCh: '204',
+              link: "",
+              nameZ: 'Основы экономической диагностики (Л)',
+              teacherZ: 'Кузьмина Н.В.',
+              auditoryZ: '506',
             },
             {
               number: "2",
               time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              nameCh: "Международные стандарты финанс. отчетности (Пр)",
+              teacherCh: "Горбачёв В.А.",
+              auditoryCh: '010',
+              link: "",
+              nameZ: 'Налоговый учет (Пр)',
+              teacherZ: 'Горбачёв В.А.',
+              auditoryZ: '010',
             },
             {
               number: "3",
               time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
+              nameCh: "Страхование (Пр)",
+              teacherCh: "Щеглов С.С.",
+              auditoryCh: '03',
               link: ""
-            }
+            },
+            {
+              number: "5",
+              time: "16:40-18:10",
+              nameCh: "Физическая культура и спорт (Пр)",
+              teacherCh: "-",
+              auditoryCh: 'Спортзал',
+              link: ""
+            },
           ]
         },
 
@@ -111,25 +102,33 @@ export default {
             {
               number: "1",
               time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              nameCh: "Основы экономической диагностики (Пр)",
+              teacherCh: "Кузьмина Н.В.",
+              auditoryCh: '508',
+              link: "",
             },
             {
               number: "2",
               time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
+              nameCh: "Бухгалтерский учет в банках (Пр)",
+              teacherCh: "Волошина Е.И.",
+              auditoryCh: '206',
               link: ""
             },
             {
               number: "3",
               time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
+              nameCh: "Страхование (Л)",
+              teacherCh: "Абибуллаев М.С.",
+              auditoryCh: '512',
+              link: ""
+            },
+            {
+              number: "4",
+              time: "15:00-16:30",
+              nameCh: "-",
+              teacherCh: "-",
+              auditoryCh: '-',
               link: ""
             }
           ]
@@ -140,28 +139,39 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Бухгалтерский финансовый учет-2 (Л0',
+              teacherCh: 'Ежакова Н.В.',
+              auditoryCh: '407',
+              link: '',
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
-            }
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: 'Бухгалтерский финансовый учет-2 (Пр)',
+              teacherCh: 'Ежакова Н.В.',
+              auditoryCh: '407',
+              link: '',
+            },
+            {
+              number: "4",
+              time: "15:00-16:30",
+              nameCh: 'Налоговый учет (Л)',
+              teacherCh: 'Еримизина М.И.',
+              auditoryCh: '407',
+              link: '',
+              nameZ: 'Основы экономической диагностики (Пр)',
+              teacherZ: 'Кузьмина Н.В.',
+              auditoryZ: '511',
+            },
           ]
         },
 
@@ -170,27 +180,41 @@ export default {
           lessons: [
             {
               number: "1",
-              time: "09:50-11:20",
-              name: "ЖЦИС",
-              teacher: "Королёв О.Л.",
-              auditory: '306',
-              link: ""
+              time: "9:50-11:20",
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+              nameZ: 'Автоматизация бух. учета и анализа (Л)',
+              teacherZ: 'Сметанко А.В.',
+              auditoryZ: '206',
             },
             {
-              number: "2",
-              time: "11:30-13:00",
-              name: "Культурология",
-              teacher: "Кравченко И.С.",
-              auditory: '306',
-              link: ""
+              number: '2',
+              time: '11:30-13:00',
+              nameCh: 'Операции кредитных организаций (Пр)',
+              teacherCh: 'Бабин М.М.',
+              auditoryCh: '404',
+              link: ' ',
+              nameZ: 'Автоматизация бух. учета и анализа (Л)',
+              teacherZ: 'Кулякина Е.Л.',
+              auditoryZ: '206',
             },
             {
-              number: "3",
-              time: "13:20-14:50",
-              name: "БЖД",
-              teacher: "Предпопие",
-              auditory: '306',
-              link: ""
+              number: '3',
+              time: '13:20-14:50',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
+            },
+            {
+              number: '4',
+              time: '15:00-16:30',
+              nameCh: '-',
+              teacherCh: '-',
+              auditoryCh: '-',
+              link: '-',
             }
           ]
         }
