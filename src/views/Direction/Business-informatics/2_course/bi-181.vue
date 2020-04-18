@@ -1,17 +1,18 @@
 <template>
-  <Schedule
-    :days="days"
-    :groupName="groupName"
-  />
+  <div>
+    <Schedule class="hidden-md-and-down" :days="days" :groupName="groupName" />
+    <Schedule_for_mobile class="hidden-md-and-up" :days="days" :groupName="groupName" />
+  </div>
 </template>
 
 <script>
 import Schedule from "@/components/Schedule.vue";
+import Schedule_for_mobile from "@/components/Schedule_for_mobile.vue";
 
 export default {
   data() {
     return {
-      groupName:'БИ-181',
+      groupName: "БИ-181",
       days: [
         {
           name: "Понедельник",
@@ -267,7 +268,8 @@ export default {
   },
 
   components: {
-    Schedule
+    Schedule,
+    Schedule_for_mobile
   }
 };
 </script>

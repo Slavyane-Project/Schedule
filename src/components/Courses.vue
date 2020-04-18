@@ -20,14 +20,14 @@
                     <v-icon x-large color="black">{{ faculty.icon }}</v-icon>
                   </v-avatar>
                 </v-responsive>
-                <v-card-text class="pb-6">
+                <v-card-text class="align-center">
                   <div class="myFont title">{{ faculty.name }}</div>
                 </v-card-text>
                 <v-card-actions class="justify-center">
                   <v-menu transition="slide-y-transition">
                     <template v-slot:activator="{ on }">
                       <div class="text-center">
-                        <v-btn v-on="on" rounded class="mb-4">
+                        <v-btn v-on="on" rounded color="deep-orange darken-1" outlined class="mb-8">
                           <span>Выберите группу</span>
                         </v-btn>
                       </div>

@@ -30,7 +30,7 @@
     <v-navigation-drawer fixed app v-model="drawer" temporary color="deep-orange lighten-5">
       <v-list>
         <v-row class="justify-center">
-        <v-img max-height="70" class="mb-3 first" max-width="190" src="https://imgur.com/4InY1Uq.png"></v-img>
+        <v-img max-height="70" class="mb-3" max-width="190" src="https://imgur.com/4InY1Uq.png"></v-img>
         </v-row>
         <v-divider></v-divider>
         <v-list-item-group dense color="deep-orange darken-1">
@@ -50,8 +50,6 @@
 </template>
 
 <script>
-import gsap from 'gsap'
-
 export default {
   data () {
     return {
@@ -75,11 +73,6 @@ export default {
       ]
     }
   },
-  name: "drawerIcon",
-  mounted() {
-    let drawerIcon = gsap.timeline()
-    drawerIcon.from('.first', { x: 20, duration: 1, opacity: 0, ease: 'power3.inOut'},)
-  }
 }
 
 </script>
