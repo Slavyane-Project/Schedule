@@ -1,26 +1,26 @@
 <template>
   <div>
-    <v-container class="mt-5">
+    <v-container class="containerStyle">
       <h1>Расписание группы: {{groupName}}</h1>
       <v-row class="justify-center">
         <v-col
                 cols="12"
                 md="12"
-                lg="8"
-                class="justify-center align-middle mb-6 cards"
+                lg="6"
+                class="mb-6 cards"
                 v-for="day of days"
                 :key="day.name"
                 flat
         >
           <v-card class="deep-orange lighten-2"
-                  :class="{first: $vuetify.breakpoint.md, second: $vuetify.breakpoint.lg}">
+                  :class="{first: $vuetify.breakpoint.md, second: $vuetify.breakpoint.lg, third: $vuetify.breakpoint.xl}">
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
             <div class="divCenter">
               <v-card
                       v-for="lesson of day.lessons"
                       :key="lesson.number"
                       class="mb-1 mx-2"
-                      :class="{first1: $vuetify.breakpoint.md, second1: $vuetify.breakpoint.lg}"
+                      :class="{first1: $vuetify.breakpoint.md, second1: $vuetify.breakpoint.lg, third1: $vuetify.breakpoint.xl}"
                       elevation="5"
               >
                 <v-row>
@@ -42,11 +42,11 @@
                     <hr />
                     <div v-if="lesson.nameZ!=''">
                       <v-row class="justify-center">
-                        <div class="text-center blue--text">{{ lesson.nameCh }}</div>
+                        <div class="text-center blue--text lessonStyle">{{ lesson.nameCh }}</div>
                       </v-row>
                       <hr />
                       <v-row class="justify-center">
-                        <div class="text-center red--text">{{ lesson.nameZ }}</div>
+                        <div class="text-center red--text lessonStyle">{{ lesson.nameZ }}</div>
                       </v-row>
                     </div>
                     <div v-else>
@@ -155,11 +155,15 @@ name: "cards",
 
   .divCenter {
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
+  }
+
+  .lessonStyle {
+    word-wrap: normal;
   }
 
   .first {
-    height: 530px;
+    height: 525px;
     border-color: blue;
   }
 
@@ -168,13 +172,21 @@ name: "cards",
     border-color: blue;
   }
 
+  .third {
+    height: 510px
+  }
+
   .first1 {
-    height: 90px;
+    height: 107px;
     border-color: blue;
   }
 
   .second1 {
     height: 110px;
     border-color: blue;
+  }
+
+  .third1 {
+    height: 100px
   }
 </style>
