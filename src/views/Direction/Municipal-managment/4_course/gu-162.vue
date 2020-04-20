@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Schedule class="hidden-md-and-down" :days="days" :groupName="groupName" />
-    <Schedule_for_mobile class="hidden-md-and-up" :days="days" :groupName="groupName" />
+    <Schedule class="visible-md-and-up" :days="days" :groupName="groupName" />
+    <Schedule_for_mobile class="visible-sm-and-down" :days="days" :groupName="groupName" />
   </div>
 </template>
 

@@ -11,16 +11,14 @@
           :key="day.name"
           flat
         >
-          <v-card min-height="510" max-height="510" class="deep-orange lighten-2">
+          <v-card class="deep-orange ligthen-2">
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
-            <div min-height="410" max-height="410" class="divCenter">
+            <div class="divCenter">
               <v-card
                 v-for="lesson of day.lessons"
                 :key="lesson.number"
                 class="mb-1 mx-2 "
                 elevation="5"
-                min-height="90"
-                max-height="90"
               >
                 <v-row>
                   <v-col cols="12" sm="2" md="2" lg="2">
@@ -157,5 +155,8 @@ hr {
 .divCenter {
   margin: 0 auto;
   padding: 2%;
+}
+.card_main_lg {
+  height: 510px
 }
 </style>
