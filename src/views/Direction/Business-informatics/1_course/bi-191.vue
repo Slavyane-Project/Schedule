@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Schedule class="visible-md-and-up" :days="days" :groupName="groupName" />
-    <Schedule_for_mobile class="visible-sm-and-down" :days="days" :groupName="groupName" />
+    <Schedule class="hidden-sm-and-down" :days="days" :groupName="groupName"/>
+    <Schedule_for_mobile class="hidden-md-and-up" :days="days" :groupName="groupName"/>
   </div>
 </template>
 
@@ -82,11 +82,11 @@ export default {
               number: '2',
               time: '11:30-13:00',
               nameCh: 'Алгоритмизация и программирование (Пр)',
-              teacherCh: 'Бакуменко М.А. (Усенко Р.С.)',
+              teacherCh: 'Бакуменко М.А.',
               auditoryCh: '306 (307)',
               link: '',
               nameZ: '',
-              teacherZ: '',
+              teacherZ: 'Усенко Р.С.',
               auditoryZ: ''
             },
             {
@@ -143,11 +143,11 @@ export default {
               number: '3',
               time: '13:20-14:50',
               nameCh: 'Иностранный язык (Пр)',
-              teacherCh: 'Сидоренко И.Я. (Миколайчик М.В.)',
+              teacherCh: 'Сидоренко И.Я.',
               auditoryCh: '408 (402)',
               link: ' ',
               nameZ: '',
-              teacherZ: '',
+              teacherZ: 'Миколайчик М.В.',
               auditoryZ: ''
             },
             {

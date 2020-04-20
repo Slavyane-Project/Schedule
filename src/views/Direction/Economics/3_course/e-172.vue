@@ -1,10 +1,9 @@
 <template>
   <div>
-    <Schedule class="visible-md-and-up" :days="days" :groupName="groupName" />
-    <Schedule_for_mobile class="visible-sm-and-down" :days="days" :groupName="groupName" />
+    <Schedule class="hidden-sm-and-down" :days="days" :groupName="groupName"/>
+    <Schedule_for_mobile class="hidden-md-and-up" :days="days" :groupName="groupName"/>
   </div>
 </template>
-
 <script>
 import Schedule from "@/components/Schedule.vue";
 import Schedule_for_mobile from "@/components/Schedule_for_mobile.vue";

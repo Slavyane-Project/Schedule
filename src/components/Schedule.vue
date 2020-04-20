@@ -4,28 +4,31 @@
       <h1>Расписание группы: {{groupName}}</h1>
       <v-row class="justify-center">
         <v-col
-          cols="12"
-          md="6"
-          class="justify-center align-middle mb-6 cards"
-          v-for="day of days"
-          :key="day.name"
-          flat
+                cols="12"
+                md="12"
+                lg="8"
+                class="justify-center align-middle mb-6 cards"
+                v-for="day of days"
+                :key="day.name"
+                flat
         >
-          <v-card class="deep-orange ligthen-2">
+          <v-card class="deep-orange lighten-2"
+                  :class="{first: $vuetify.breakpoint.md, second: $vuetify.breakpoint.lg}">
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
             <div class="divCenter">
               <v-card
-                v-for="lesson of day.lessons"
-                :key="lesson.number"
-                class="mb-1 mx-2 "
-                elevation="5"
+                      v-for="lesson of day.lessons"
+                      :key="lesson.number"
+                      class="mb-1 mx-2"
+                      :class="{first1: $vuetify.breakpoint.md, second1: $vuetify.breakpoint.lg}"
+                      elevation="5"
               >
                 <v-row>
                   <v-col cols="12" sm="2" md="2" lg="2">
                     <v-row class="justify-center">
                       <div class="caption black--text">Время:</div>
                     </v-row>
-                    <hr />
+                    <hr/>
                     <v-row class="justify-center">
                       <v-col class="align-center">
                         <div class="text-center">{{ lesson.time }}</div>
@@ -146,17 +149,32 @@ name: "cards",
 </script>
 
 <style>
-hr {
-  border-radius: 5px;
-}
-.blockStyle {
-  vertical-align: middle;
-}
-.divCenter {
-  margin: 0 auto;
-  padding: 2%;
-}
-.card_main_lg {
-  height: 510px
-}
+  hr {
+    border-radius: 5px;
+  }
+
+  .divCenter {
+    margin: 0 auto;
+    padding: 2%;
+  }
+
+  .first {
+    height: 530px;
+    border-color: blue;
+  }
+
+  .second {
+    height: 535px;
+    border-color: blue;
+  }
+
+  .first1 {
+    height: 90px;
+    border-color: blue;
+  }
+
+  .second1 {
+    height: 110px;
+    border-color: blue;
+  }
 </style>
