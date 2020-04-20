@@ -4,7 +4,7 @@
       <v-col cols="12" sm="6" md="6" lg="7" xl="7">
         <v-card flat class="cardStyle hidden-sm-and-down">
           <v-row class="justify-center">
-          <v-img max-width="650" src="../assets/big_logo.png" class="first"></v-img>
+          <v-img max-width="650" src="https://imgur.com/y14cs7l.png" class="first"></v-img>
           </v-row>
           <v-card-text class="display-2 text-xs-center homeTextBig black--text second">Приветствуем.</v-card-text>
           <v-card-text class="display-2 text-xs-center homeTextBig black--text third">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
@@ -29,7 +29,7 @@ export default {
   mounted() {
     let home = gsap.timeline()
     home.from('.first', { y: 50, duration: 0.01, opacity: 0, ease: 'power3.inOut' },)
-    home.to('.first', { y: 20, duration: 1, opacity: 1, ease: 'power3.inOut' },)
+    home.to('.first', {y:20, duration:1, opacity:1, ease:'power3.inOut'},)
     home.from('.second', { y: 35, duration: 0.5, opacity: 0, ease: 'power3.inOut' }, '<.1')
     home.from('.third', { y: 35, duration: 0.5, opacity: 0, ease: 'power3.inOut' }, '<.1')
     home.from('.fourth', { y: 35, duration: 0.5,  opacity: 0, ease: 'power3.inOut' }, '<.1')
@@ -54,5 +54,17 @@ export default {
   background-color: transparent!important;
   border-color: transparent!important;
   word-wrap: normal;
+ }
+ .first {
+   height: auto
+ }
+ .second {
+  height: auto
+ }
+ .third {
+   height: auto
+ }
+ .fourth {
+   height: auto
  }
 </style>

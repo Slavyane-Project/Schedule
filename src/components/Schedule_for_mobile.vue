@@ -4,23 +4,23 @@
       <h1>Расписание группы: {{groupName}}</h1>
       <v-row class="justify-center">
         <v-col
-                cols="12"
-                sm="12"
-                class="justify-center align-middle mb-6 day"
-                v-for="day of days"
-                :key="day.name"
-                flat
+          cols="12"
+          sm="12"
+          class="justify-center align-middle mb-6 day"
+          v-for="day of days"
+          :key="day.name"
+          flat
         >
-          <v-card class="paddingFix deep-orange lighten-2"
-                  :class="{first: $vuetify.breakpoint.sm, second: $vuetify.breakpoint.xs}">
+          <v-card
+            class="paddingFix deep-orange lighten-2"
+          >
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
             <div class="divCenter">
               <v-card
-                      v-for="lesson of day.lessons"
-                      :key="lesson.number"
-                      class="mb-3 mx-2"
-                      :class="{first1: $vuetify.breakpoint.sm, second1: $vuetify.breakpoint.xs}"
-                      elevation="5"
+                v-for="lesson of day.lessons"
+                :key="lesson.number"
+                class="mb-3 mx-2"
+                elevation="5"
               >
                 <v-row>
                   <v-col class="pa-0" cols="12" sm="2" md="2" lg="2">
@@ -119,7 +119,7 @@
 </template>
 
 <script>
-import gsap from 'gsap'
+import gsap from "gsap";
 
 export default {
   props: {
@@ -136,17 +136,16 @@ export default {
 
   name: "day",
   mounted() {
-    gsap.from('.day', {
+    gsap.from(".day", {
       duration: 0.8,
       opacity: 0,
       scale: 0,
-      ease: 'power1',
+      ease: "power1",
       stagger: {
-        from: 'edges'
+        from: "edges"
       }
-    })
-    
-}
+    });
+  }
 };
 </script>
 
@@ -166,14 +165,6 @@ hr {
 .paddingFixTime {
   padding-left: 12px;
   padding-right: 12px;
-  padding-top: 12px
-}
-
-.first {
-
-}
-
-.second {
-
+  padding-top: 12px;
 }
 </style>

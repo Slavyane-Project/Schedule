@@ -3,32 +3,26 @@
     <v-container class="containerStyle">
       <h1>Расписание группы: {{groupName}}</h1>
       <v-row class="justify-center">
-        <v-col
-                cols="12"
-                md="12"
-                lg="6"
-                class="mb-6 cards"
-                v-for="day of days"
-                :key="day.name"
-                flat
-        >
-          <v-card class="deep-orange lighten-2"
-                  :class="{first: $vuetify.breakpoint.md, second: $vuetify.breakpoint.lg, third: $vuetify.breakpoint.xl}">
+        <v-col cols="12" md="12" lg="6" class="mb-6 cards" v-for="day of days" :key="day.name" flat>
+          <v-card
+            class="deep-orange lighten-2"
+            :class="{first: $vuetify.breakpoint.md, second: $vuetify.breakpoint.lg, third: $vuetify.breakpoint.xl}"
+          >
             <v-card-title class="justify-center white--text">{{ day.name }}</v-card-title>
             <div class="divCenter">
               <v-card
-                      v-for="lesson of day.lessons"
-                      :key="lesson.number"
-                      class="mb-1 mx-2"
-                      :class="{first1: $vuetify.breakpoint.md, second1: $vuetify.breakpoint.lg, third1: $vuetify.breakpoint.xl}"
-                      elevation="5"
+                v-for="lesson of day.lessons"
+                :key="lesson.number"
+                class="mb-1 mx-2"
+                :class="{first1: $vuetify.breakpoint.md, second1: $vuetify.breakpoint.lg, third1: $vuetify.breakpoint.xl}"
+                elevation="5"
               >
                 <v-row>
                   <v-col cols="12" sm="2" md="2" lg="2">
                     <v-row class="justify-center">
                       <div class="caption black--text">Время:</div>
                     </v-row>
-                    <hr/>
+                    <hr />
                     <v-row class="justify-center">
                       <v-col class="align-center">
                         <div class="text-center">{{ lesson.time }}</div>
@@ -112,81 +106,76 @@
 </template>
 
 <script>
-import gsap from 'gsap'
-
+import gsap from "gsap";
 
 export default {
   props: {
     groupName: {
-        type:String,
-        required: true
+      type: String,
+      required: true
     },
     days: {
       type: Array,
       required: true
     }
   },
-  components: {
+  components: {},
 
-  },
-
-name: "cards",
+  name: "cards",
   mounted() {
-    gsap.from('.cards', {
+    gsap.from(".cards", {
       duration: 1,
       opacity: 0,
       scale: 0,
-      ease: 'power3',
+      ease: "power3",
       stagger: {
         each: 0.1,
-        from: 'edges'
+        from: "edges"
       }
-    })
-    
-}
+    });
+  }
 };
-
 </script>
 
 <style>
-  hr {
-    border-radius: 5px;
-  }
+hr {
+  border-radius: 5px;
+}
 
-  .divCenter {
-    margin: 0 auto;
-    padding: 1%;
-  }
+.divCenter {
+  margin: 0 auto;
+  padding: 1%;
+}
 
-  .lessonStyle {
-    word-wrap: normal;
-  }
+.lessonStyle {
+  word-wrap: normal;
+}
 
-  .first {
-    height: 525px;
-    border-color: blue;
-  }
+.first {
+  height: 525px;
+  border-color: blue;
+}
 
-  .second {
-    height: 535px;
-    border-color: blue;
-  }
+.second {
+  height: 535px;
+  border-color: blue;
+}
 
-  .third {
-    height: 510px
-  }
+.third {
+  height: 510px;
+}
 
-  .first1 {
-    height: 107px;
-    border-color: blue;
-  }
+.first1 {
+  height: 107px;
+  border-color: blue;
+}
 
-  .second1 {
-    height: 110px;
-    border-color: blue;
-  }
+.second1 {
+  height: 110px;
+  border-color: blue;
+}
 
-  .third1 {
-    height: 100px
-  }
+.third1 {
+  height: 100px;
+}
 </style>
