@@ -11,10 +11,19 @@
           <br>
           <v-card-text class="display-1 font-weight-bold text-xs-center homeTextBig black--text fourth" >Выберите ваш курс в меню</v-card-text>
         </v-card>
-        <v-card flat class="cardStyle hidden-md-and-up">
-          <v-card-text class="headline homeTextSmall text-xs-center  black--text second" bold>Приветствуем.</v-card-text>
-          <v-card-text class="headline homeTextSmall text-xs-center  black--text third">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
-          <v-card-text class="title font-weight-bold homeTextSmall text-xs-center  black--text fourth" >Выберите ваш курс в меню</v-card-text>
+        <v-card flat class="cardStyle hidden-sm-and-up mx-auto">
+          <v-img src="https://i.imgur.com/pcNezTV.png" class="align-start mobile" style="max-height:100vh;" >
+            <v-card-text class="headline homeTextSmall text-xs-center  black--text second" bold>Приветствуем.</v-card-text>
+            <v-card-text class="headline homeTextSmall text-xs-center  black--text third">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
+            <v-card-text class="title font-weight-bold homeTextSmall text-xs-center  black--text fourth" >Выберите ваш курс в меню</v-card-text>
+          </v-img>
+        </v-card>
+         <v-card flat class="cardStyle hidden-xs-only hidden-md-and-up mx-auto">
+          <v-img src="" class="align-start mobile" style="max-height:100vh;" >
+            <v-card-text class="headline homeTextSmall text-xs-center  black--text second" bold>Приветствуем.</v-card-text>
+            <v-card-text class="headline homeTextSmall text-xs-center  black--text third">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
+            <v-card-text class="title font-weight-bold homeTextSmall text-xs-center  black--text fourth" >Выберите ваш курс в меню</v-card-text>
+          </v-img>
         </v-card>
       </v-col>
     </v-row>
@@ -23,12 +32,11 @@
 
 <script>
 import gsap from 'gsap'
-
 export default {
   name: "Home",
   mounted() {
     let home = gsap.timeline()
-    home.from('.first', { y: 50, duration: 0.01, opacity: 0, ease: 'power3.inOut' },)
+    home.from('.first', { y: 50, duration: 1, opacity: 0, ease: 'power3.inOut' },)
     home.to('.first', {y:20, duration:1, opacity:1, ease:'power3.inOut'},)
     home.from('.second', { y: 35, duration: 0.5, opacity: 0, ease: 'power3.inOut' }, '<.1')
     home.from('.third', { y: 35, duration: 0.5, opacity: 0, ease: 'power3.inOut' }, '<.1')
@@ -38,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
+  .mobile{
+    height: auto;
+  }
   .home-hero {
     background: url(../assets/background.png);
     background-size: cover;
