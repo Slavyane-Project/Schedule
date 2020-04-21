@@ -36,4 +36,3 @@ export default {
   font-family: 'Rubik'
 }
 </style>
-

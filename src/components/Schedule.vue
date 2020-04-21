@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="containerStyle">
+    <v-container fluid class="containerStyle">
       <h1>Расписание группы: {{groupName}}</h1>
       <v-row class="justify-center">
         <v-col cols="12" md="12" lg="6" class="mb-6 cards" v-for="day of days" :key="day.name" flat>
@@ -150,32 +150,27 @@ hr {
 .lessonStyle {
   word-wrap: normal;
 }
-
 .first {
   height: 525px;
-  border-color: blue;
 }
 
 .second {
   height: 535px;
-  border-color: blue;
 }
 
 .third {
-  height: 510px;
+  height: 535px;
 }
 
 .first1 {
   height: 107px;
-  border-color: blue;
 }
 
 .second1 {
   height: 110px;
-  border-color: blue;
 }
 
 .third1 {
-  height: 100px;
+  height: 110px;
 }
 </style>

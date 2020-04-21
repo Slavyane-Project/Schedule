@@ -32,12 +32,12 @@ export default {
               number: '2',
               time: '11:30-13:00',
               nameCh: 'Иностранный язык',
-              teacherCh: 'Харченко М.А. (Шевель В.Г.)',
-              auditoryCh: '010 (09)',
+              teacherCh: 'Харченко М.А.',
+              auditoryCh: '010',
               link: '',
               nameZ: '',
-              teacherZ: '',
-              auditoryZ: ''
+              teacherZ: 'Шевель В.Г.',
+              auditoryZ: '09'
             },
             {
               number: '3',

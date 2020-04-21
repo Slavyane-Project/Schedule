@@ -32,12 +32,12 @@ export default {
               number: '2',
               time: '11:30-13:00',
               nameCh: 'Иностранный язык (Пр)',
-              teacherCh: 'Сидорченко И.Я. (Миколайчик М.В.)',
-              auditoryCh: '408 (402)',
+              teacherCh: 'Сидорченко И.Я. ',
+              auditoryCh: '408',
               link: '',
               nameZ: '',
-              teacherZ: '',
-              auditoryZ: ''
+              teacherZ: 'Миколайчик М.В.',
+              auditoryZ: '402'
             },
             {
               number: '3',
@@ -205,7 +205,7 @@ export default {
               time: '16:40-18:10',
               nameCh: 'Физическая культура (Пр)',
               teacherCh: '-',
-              auditoryCh: 'Кафедра физкультуры и спорта',
+              auditoryCh: 'Спортзал',
               link: '',
               nameZ: '',
               teacherZ: '',
