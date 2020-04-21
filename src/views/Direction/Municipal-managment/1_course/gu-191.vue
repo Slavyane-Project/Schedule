@@ -194,11 +194,11 @@ export default {
               time: '13:20-14:50',
               nameCh: 'Иностранный язык (Пр)',
               teacherCh: 'Мележик К.А. (Харченко М.А.) (Шевель В.Г.)',
-              auditoryCh: '02 (03) (09)',
+              auditoryCh: '02 (03)',
               link: ' ',
               nameZ: '',
-              teacherZ: '',
-              auditoryZ: ''
+              teacherZ: 'Шевель В.Г.',
+              auditoryZ: '09'
             },
             {
               number: '5',
