@@ -133,7 +133,7 @@ export default {
               time: '13:20-14:50',
               nameCh: '-',
               teacherCh: '-',
-              auditoryCh: '206',
+              auditoryCh: '-',
               link: '-',
               nameZ: '-',
               teacherZ: '-',
@@ -143,23 +143,23 @@ export default {
               number: '4',
               time: '15:00-16:30',
               nameCh: 'Деловой иностранный язык (Пр)',
-              teacherCh: 'Сидоренко И.Я. (Миколайчик М.В.)',
-              auditoryCh: '408 (402)',
+              teacherCh: 'Сидоренко И.Я.',
+              auditoryCh: '408',
               link: '-',
               nameZ: '',
-              teacherZ: '',
-              auditoryZ: ''
+              teacherZ: 'Миколайчик М.В.',
+              auditoryZ: '402'
             },
             {
               number: '5',
               time: '16:40-18:10',
               nameCh: 'Деловой иностранный язык (Пр)',
-              teacherCh: 'Сидоренко И.Я. (Миколайчик М.В.)',
-              auditoryCh: '408 (402)',
+              teacherCh: 'Сидоренко И.Я.',
+              auditoryCh: '408',
               link: '-',
               nameZ: '',
-              teacherZ: '',
-              auditoryZ: ''
+              teacherZ: 'Миколайчик М.В.',
+              auditoryZ: '402'
             },
           ]
         },

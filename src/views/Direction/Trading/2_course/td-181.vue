@@ -155,7 +155,7 @@ export default {
               time: '16:40-18:10',
               nameCh: 'Физическая культура',
               teacherCh: 'Кафедра физ-ры',
-              auditoryCh: 'Спорт зал',
+              auditoryCh: 'Спортзал',
               link: '-',
               nameZ: '',
               teacherZ: '',

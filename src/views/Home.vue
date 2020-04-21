@@ -19,9 +19,9 @@
 
         <v-card flat class="cardStyle hidden-sm-and-up mx-auto">
           <v-img src="https://i.imgur.com/pcNezTV.png" class="align-start justify-right mobile" style="max-height:100vh;" >
-            <v-card-text class="headline homeTextSmall text-xs-center  black--text second" bold>Приветствуем.</v-card-text>
-            <v-card-text class="headline homeTextSmall text-xs-center  black--text third">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
-            <v-card-text class="title font-weight-bold homeTextSmall text-xs-center  black--text fourth" >Выберите ваш курс в меню</v-card-text>
+            <v-card-text class="homeTextSmall text-xs-center black--text second" :class="{card_text_xs1: $vuetify.breakpoint.xs}" bold>Приветствуем.</v-card-text>
+            <v-card-text class="homeTextSmall text-xs-center  black--text third" :class="{card_text_xs2: $vuetify.breakpoint.xs}">Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
+            <v-card-text class="font-weight-bold homeTextSmall text-xs-center  black--text fourth" :class="{card_text_xs3: $vuetify.breakpoint.xs}">Выберите ваш курс в меню</v-card-text>
           </v-img>
         </v-card>
 
@@ -29,12 +29,12 @@
 
         <v-card flat class="cardStyle hidden-xs-only hidden-md-and-up mx-auto">
           <v-img src="" class="align-start mobile" style="max-height:100vh;">
-            <v-card-text class="headline homeTextSmall text-xs-center  black--text second" bold>Приветствуем.
+            <v-card-text class="homeTextSmall text-xs-center  black--text second" :class="{card_text_sm1: $vuetify.breakpoint.sm}">Приветствуем.
             </v-card-text>
-            <v-card-text class="headline homeTextSmall text-xs-center  black--text third">Вы находитесь на сайте
+            <v-card-text class="homeTextSmall text-xs-center  black--text third" :class="{card_text_sm2: $vuetify.breakpoint.sm}">Вы находитесь на сайте
               расписания ИЭиУ.
             </v-card-text>
-            <v-card-text class="title font-weight-bold homeTextSmall text-xs-center  black--text fourth">Выберите ваш
+            <v-card-text class="font-weight-bold homeTextSmall text-xs-center  black--text fourth" :class="{card_text_sm3: $vuetify.breakpoint.sm}">Выберите ваш
               курс в меню
             </v-card-text>
           </v-img>
@@ -84,6 +84,26 @@
     background-color: transparent !important;
     border-color: transparent !important;
     word-wrap: normal;
+  }
+
+  .card_text_xs1 {
+    font-size: 1.8rem
+  }
+   .card_text_xs2 {
+    font-size: 1.6rem
+  }
+   .card_text_xs3 {
+    font-size: 1.5rem
+  }
+
+  .card_text_sm1 {
+
+  }
+  .card_text_sm2 {
+    
+  }
+  .card_text_sm3 {
+    
   }
 
   .first {
