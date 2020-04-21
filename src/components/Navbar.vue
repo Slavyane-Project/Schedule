@@ -37,7 +37,7 @@
           <template>
             <v-list-item v-for="course of courses" :key="course.title" router :to="course.url" class="">
               <v-list-item-content>
-                <v-list-item-title class="font-weight-bold title">
+                <v-list-item-title class="fontStyle">
                   {{course.title}}
                 </v-list-item-title>
               </v-list-item-content>
@@ -81,10 +81,16 @@ export default {
   .pointer {
     cursor: pointer;
   }
+
   .images {
     height: 3%;
     width: 13%;
     margin-top: 3px;
 
+  }
+
+  .fontStyle {
+    font-family: 'Rubik';
+    font-weight: bold;
   }
 </style>
