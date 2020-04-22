@@ -29,16 +29,18 @@
 
         <!-- xs -->
 
-        <v-card flat class="cardStyle hidden-sm-and-up mx-auto">
+        <v-card flat class="cardStyle cardStyleXs hidden-sm-and-up mx-auto">
           <v-card-text
-            class="homeTextSmall text-xs-center black--text second"
-            :class="{card_text_xs1: $vuetify.breakpoint.xs}"
-            bold
-          >Приветствуем.</v-card-text>
+                  class="homeTextSmall text-xs-center black--text second"
+                  :class="{card_text_xs1: $vuetify.breakpoint.xs}"
+                  bold
+          >Приветствуем.
+          </v-card-text>
           <v-card-text
-            class="homeTextSmall text-xs-center black--text third"
-            :class="{card_text_xs2: $vuetify.breakpoint.xs}"
-          >Вы находитесь на сайте расписания ИЭиУ.</v-card-text>
+                  class="homeTextSmall text-xs-center black--text third"
+                  :class="{card_text_xs2: $vuetify.breakpoint.xs}"
+          >Вы находитесь на сайте расписания ИЭиУ.
+          </v-card-text>
           <v-card-text
             class="font-weight-bold homeTextSmall text-xs-center black--text fourth"
             :class="{card_text_xs3: $vuetify.breakpoint.xs}"
@@ -139,6 +141,11 @@ export default {
   word-wrap: normal;
 }
 
+.cardStyleXs {
+  margin-top: -140px;
+  position: fixed;
+}
+
 .card_text_xs1 {
   font-size: 1.8rem;
 }
@@ -160,8 +167,7 @@ export default {
 }
 
 .image_xs {
-  margin-top: 270px;
-  margin-bottom: 0px;
+  margin-top: 250px;
   position: fixed;
 }
 .image_sm {
