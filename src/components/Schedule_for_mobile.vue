@@ -44,11 +44,11 @@
                       <hr />
                       <div v-if="lesson.nameZ!=''">
                         <v-row class="justify-center">
-                          <div class="text-center blue--text">{{ lesson.nameCh }}</div>
+                          <div class="text-center textCh">{{ lesson.nameCh }}</div>
                         </v-row>
                         <hr />
                         <v-row class="justify-center">
-                          <div class="text-center red--text">{{ lesson.nameZ }}</div>
+                          <div class="text-center textZ">{{ lesson.nameZ }}</div>
                         </v-row>
                       </div>
                       <div v-else>
@@ -68,11 +68,11 @@
                       <hr />
                       <div v-if="lesson.teacherZ!=''">
                         <v-row class="justify-center">
-                          <div class="text-center blue--text">{{ lesson.teacherCh }}</div>
+                          <div class="text-center textCh">{{ lesson.teacherCh }}</div>
                         </v-row>
                         <hr />
                         <v-row class="justify-center">
-                          <div class="text-center red-text">{{ lesson.teacherZ }}</div>
+                          <div class="text-center textZ">{{ lesson.teacherZ }}</div>
                         </v-row>
                       </div>
                       <div v-else>
@@ -92,11 +92,11 @@
                       <hr />
                       <div v-if="lesson.auditoryZ!=''">
                         <v-row class="justify-center">
-                          <div class="text-center blue--text">{{ lesson.auditoryCh }}</div>
+                          <div class="text-center textCh">{{ lesson.auditoryCh }}</div>
                         </v-row>
                         <hr />
                         <v-row class="justify-center">
-                          <div class="text-center red--text">{{ lesson.auditoryZ }}</div>
+                          <div class="text-center textZ">{{ lesson.auditoryZ }}</div>
                         </v-row>
                       </div>
                       <div v-else>
@@ -166,5 +166,13 @@ hr {
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 12px;
+}
+
+.textCh {
+  color: #1E88E5;
+}
+
+.textZ {
+  color: #E53935;
 }
 </style>
