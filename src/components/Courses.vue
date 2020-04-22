@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mt-10">Выберите направление подготовки</h1>
+    <h1 class="mt-10">Выберите направление подготовки и группу</h1>
     <v-container fluid class="mt-5 home-hero">
       <v-row class="justify-center">
         <v-col
