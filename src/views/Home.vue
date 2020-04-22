@@ -167,7 +167,7 @@ export default {
 }
 
 .image_xs {
-  margin-top: 250px;
+  margin-top: 205px;
   position: fixed;
 }
 .image_sm {
